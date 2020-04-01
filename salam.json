@@ -1,0 +1,17 @@
+[
+    {
+        "name":"ocp",
+        "description":"fondé le 7 août 1920 au Maroc et transformé en 2008",
+        "image":"photo.JFIF"
+    },
+    {
+        "name":"dell",
+        "description":"fondé le 7 août 1920 au Maroc et transformé en 2008",
+        "image":"photo.JFIF"
+    },
+    {
+        "name":"hp",
+        "description":"fondé le 7 août 1920 au Maroc et transformé en 2008",
+        "image":"photo.JFIF"
+    }
+]

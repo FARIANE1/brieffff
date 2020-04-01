@@ -1,0 +1,112 @@
+.pricing-tabs .tab-item {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  vertical-align: top;
+  float: left;
+  position: relative;
+  transition: -webkit-transform 0.3s ease-out, -webkit-filter 0.3s;
+  transition: transform 0.3s ease-out, filter 0.3s;
+  transition: transform 0.3s ease-out, filter 0.3s, -webkit-transform 0.3s ease-out, -webkit-filter 0.3s;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 10px 10px 0 0;
+  min-height: 500px !important;
+  min-width:  360px !important;
+  padding: 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.pricing-tabs .tab-item:after,
+.pricing-tabs .tab-item:before {
+  z-index: -1;
+  content: ' ';
+  position: absolute;
+  left: 10px;
+  top: 80%;
+  bottom: 18px;
+  right: 10px;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  box-shadow: 0px 25px 10px -8px rgba(0,0,0,0.4);
+}
+.pricing-tabs .tab-item:after {
+  -webkit-transform: rotate(6deg) translate3d(15px, 0, 0);
+          transform: rotate(6deg) translate3d(15px, 0, 0);
+}
+.pricing-tabs .tab-item:before {
+  -webkit-transform: rotate(-6deg) translate3d(-15px, 0, 0);
+          transform: rotate(-6deg) translate3d(-15px, 0, 0);
+}
+
+.pricing-tabs .tab-item:hover{
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.tab-item:not(:hover).flou {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.tab-item h1{
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 5rem;
+  background: #fbcb0f;
+  border-radius: inherit;
+}
+
+.tab-item .price{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  position: absolute;
+  content: ' ';
+  right: 5%;
+  left: 5%;
+  bottom: 0;
+  height: 2px;
+  background-image: linear-gradient(90deg, transparent, #fbcb0f, transparent);
+}
+.underline.black{margin-bottom: 40px;}
+.underline.black:after{
+  background-image: linear-gradient(90deg, transparent, #fbcb0f, #000, #fbcb0f, transparent);
+}
+
+.tab-item ul li{
+  height: 35px;
+  font-size: 1.2rem;
+}
+
+.tab-item ul li i{
+  color: #ffc400;
+}
+
+.tab-item:last-child ul li i{
+  color: #64dd17;
+}
+
+.tab-item:last-child ul li em{
+  text-shadow: 1px 0px 0px #fbcb0f;
+  font-size: 1.3rem;
+}
+
+.tab-item .btn-profiter{font-size: 1.7rem; letter-spacing: 1px;}
+
+.tab-item:hover .btn-profiter{background: #000 !important;}
+.prince {
+  text-align: center;
+}

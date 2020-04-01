@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<h1> Ajouter une nouvelle entreprise </h1>
+  <div class="row">
+
+    <div class="s12 m8 pricing-tabs center">
+
+      <% data.forEach(function(elem){ %>
+      <div class="col s12 m4 tab-item">
+        <h1>entreprise</h1>
+        <div class="price"><%= elem.name %></div>
+        <span class="underline"></span>
+        <ul>
+          <li><%= elem.description %></li>
+          
+        </ul>
+        <img src="<%= elem.image %>" style="width: 200px;">
+        <button class="btn btn-profiter grey darken-1">Profiter</button>
+      </div>
+      <% }); %>
+
+    </div>
+    </div>
+</body>
